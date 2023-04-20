@@ -82,19 +82,19 @@
             >;
         };
 
-        tri_layer {
+        functions_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+        //│ TAB      │          │          │          │          │   │          │          │          │          │  BSPC    │
+            &kp TAB    &kp F7     &kp F8     &kp F9    &kp F10         &none      &none      &none      &none     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+        //│ ESCAPE   │          │          │          │          │   │          │          │          │          │  ENTER   │
+            &kp ESC    &kp F4     &kp F5      &kp F6    &kp F11        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &none      &kp F1     &kp F2      &kp F3    &kp F12        &none      &none      &none      &none      &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                           &to DEFAULT  &none          &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
