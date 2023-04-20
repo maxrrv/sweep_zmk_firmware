@@ -58,7 +58,7 @@
             &kp ESC    &kp DLLR   &kp PRCNT  &kp CARET  &kp LPAR       &kp RPAR   &kp COLON  &kp SEMI   &kp PIPE   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ~        │  !       │  @       │  hash    │  [       │   │ ]        │ +        │ =        │ \        │  FNS     │
-            &kp TILDE   &kp EXCL  &kp AT     &kp HASH  &kp LBKT       &kp LBKT   &kp PLUS   &kp EQUAL  &kp BSLH   &to FNS 
+            &kp TILDE   &kp EXCL  &kp AT     &kp HASH  &kp LBKT       &kp RBKT   &kp PLUS   &kp EQUAL  &kp BSLH   &to FNS 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &to DEFAULT &sk LSHIFT      &sk RCTRL  &to NUMBERS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
