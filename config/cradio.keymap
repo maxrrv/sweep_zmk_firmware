@@ -9,6 +9,12 @@
 #define HRML(k1,k2) &ht LALT k1  &ht LGUI k2
 #define HRMR(k1,k2) &ht RGUI k1  &ht RALT k2
 
+#define DEFAULT 0
+#define SYMBOLS 1
+#define NUMBERS 2
+#define FNS 3
+#define BLUETOOTH 4
+
 / {
     behaviors {
         ht: hold_tap {
