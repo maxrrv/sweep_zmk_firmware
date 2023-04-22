@@ -58,7 +58,7 @@
             &kp ESC    &kp DLLR   &kp PRCNT  &kp CARET  &kp LPAR       &kp RPAR   &kp COLON  &kp SEMI   &kp PIPE   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ~        │  !       │  @       │  hash    │  [       │   │ ]        │ +        │ =        │ \        │  FNS     │
-            &kp TILDE   &kp EXCL  &kp AT     &kp HASH  &kp LBKT       &kp RBKT   &kp PLUS   &kp EQUAL  &kp BSLH   &to FNS 
+            &kp TILDE   &kp EXCL  &kp AT     &kp HASH  &kp LBKT       &kp RBKT   &kp PLUS   &kp EQUAL  &kp BSLH   &to BLUETOOTH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &to DEFAULT &sk LSHIFT      &sk RCTRL  &to NUMBERS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -77,7 +77,7 @@
         //│ `        │  1       │  2       │  3       │  0       │   │  +       │  -       │  ,       │ .        │          │
             &kp GRAVE  &kp N1     &kp N2     &kp N3      &kp N0        &kp PLUS   &kp MINUS  &kp COMMA  &kp DOT      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &to DEFAULT &kp SPACE      &sk RCTRL &to BLUETOOTH
+                                           &to DEFAULT &kp SPACE      &sk RCTRL &to FNS
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
