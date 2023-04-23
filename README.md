@@ -1,3 +1,3 @@
 # My personal sweep keymap
 
- ![Keymap](./assets/controllers_brief.svg)
+ ![Keymap](./assets/my_keymap.svg)
