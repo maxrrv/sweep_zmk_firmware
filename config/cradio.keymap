@@ -43,7 +43,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp SPACE  &sk LSHIFT     &sk RCTRL  &to SYMBOLS
+                                            &kp SPACE  &sk LSHIFT      &to SYMBOLS &sk RCTRL 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -57,10 +57,10 @@
         //│ ESCAPE   │  $       │  %       │  ^       │  (       │   │ )        │ :        │ ;        │ |        │  ENTER   │
             &kp ESC    &kp DLLR   &kp PRCNT  &kp CARET  &kp LPAR       &kp RPAR   &kp COLON  &kp SEMI   &kp PIPE   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ ~        │  !       │  @       │  hash    │  [       │   │ ]        │ +        │ =        │ \        │  FNS     │
+        //│ ~        │  !       │  @       │  hash    │  [       │   │ ]        │ +        │ =        │ \        │ BLUETOOTH│
             &kp TILDE   &kp EXCL  &kp AT     &kp HASH  &kp LBKT       &kp RBKT   &kp PLUS   &kp EQUAL  &kp BSLH   &to BLUETOOTH 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &to DEFAULT &sk LSHIFT      &sk RCTRL  &to NUMBERS
+                                            &kp SPACE &to DEFAULT     &to NUMBERS &sk RCTRL  
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -77,7 +77,7 @@
         //│ `        │  1       │  2       │  3       │  0       │   │  +       │  -       │  ,       │ .        │          │
             &kp GRAVE  &kp N1     &kp N2     &kp N3      &kp N0        &kp PLUS   &kp MINUS  &kp COMMA  &kp DOT      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &to DEFAULT &kp SPACE      &sk RCTRL &to FNS
+                                            &kp SPACE  &to DEFAULT     &to FNS    &sk RCTRL 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -94,7 +94,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &none      &kp F1     &kp F2      &kp F3    &kp F12        &none      &none      &none      &none      &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &to DEFAULT  &none          &none      &none 
+                                            &kp SPACE  &to DEFAULT      &none      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -111,7 +111,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none      &none      &none      &none      &none      &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &to DEFAULT  &none          &none      &none 
+                                            &kp SPACE  &to DEFAULT     &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
