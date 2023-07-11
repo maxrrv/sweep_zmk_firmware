@@ -22,7 +22,7 @@
 #define SYMBOLS 1
 #define NUMBERS 2
 #define FNS 3
-#define BLUETOOTH 4
+#define NAV_BT 4
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
         combo_##NAME { \
@@ -71,7 +71,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp SPACE  &sk LSHIFT      &to SYMBOLS &sk RCTRL 
+                                      &lt NAV_BT ESCAPE  &lt FNS SPACE      &lt SYMBOLS  TAB &lt NUMBERS ENTER 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
