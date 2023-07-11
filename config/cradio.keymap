@@ -88,7 +88,8 @@
         //│ ~        │  !       │  @       │  hash    │  |       │   │          │          │          │          │          │
             &kp TILDE   &kp EXCL  &kp AT     &kp HASH  &kp PIPE         &none    &none      &none      &none      &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp RPAR &kp UNDER     &to NUMBERS &sk RCTRL  
+        //                                    )         _
+                                            &kp RPAR &kp UNDER          &none    &none   
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -96,16 +97,16 @@
         num {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ TAB      │  7       │  8       │  9       │          │   │          │          │          │          │  BSPC    │
-            &kp TAB    &kp N7     &kp N8     &kp N9      &none         &none      &none       &none       &none    &kp BSPC
+        //│ [        │  7       │  8       │  9       │   ]      │   │          │          │          │          │          │
+            &kp LBKT    &kp N7     &kp N8     &kp N9      &kp RBKT          &none    &none      &none      &none      &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ ESCAPE   │  4       │  5       │  6       │          │   │  *       │  /       │  _       │ =        │  ENTER   │
-            &kp ESC    &kp N4     &kp N5     &kp N6      &none         &kp ASTRK  &kp FSLH   &kp UNDER  &kp EQUAL  &kp ENTER
+        //│ ESCAPE   │  4       │  5       │  6       │  =       │   │          │          │          │          │          │
+            &kp ESC    &kp N4     &kp N5     &kp N6      &kp EQUAL          &none    &none      &none      &none      &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ `        │  1       │  2       │  3       │  0       │   │  +       │  -       │  ,       │ .        │          │
-            &kp GRAVE  &kp N1     &kp N2     &kp N3      &kp N0        &kp PLUS   &kp MINUS  &kp COMMA  &kp DOT      &none
+        //│ `        │  1       │  2       │  3       │  \       │   │          │          │          │          │          │
+            &kp GRAVE  &kp N1     &kp N2     &kp N3      &kp BSLH         &none    &none      &none      &none      &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp SPACE  &to DEFAULT     &to FNS    &sk RCTRL 
+                                            &kp N0  &kp MINUS           &none    &none  
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
