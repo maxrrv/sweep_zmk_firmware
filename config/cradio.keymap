@@ -49,14 +49,12 @@
 
     combos {
         compatible = "zmk,combos";
-        COMBO(tab,    &kp TAB,        0 1, DEFAULT, 35, 100)
-        COMBO(colon,  &kp COLON,      2 3, DEFAULT, 35, 100)
-        COMBO(caps,   &kp CAPS,       4 5, DEFAULT, 35, 100)
-        COMBO(semi,   &kp SEMI,       6 7, DEFAULT, 35, 100)
-        COMBO(bspc,   &kp BSPC,       8 9, DEFAULT, 35, 100)
-        COMBO(escape, &kp ESCAPE,   10 11, DEFAULT, 35, 100)
-        COMBO(excl,   &kp EXCL,     14 15, DEFAULT, 35, 100)
-        COMBO(enter,  &kp ENTER,    18 19, DEFAULT, 35, 100)
+        COMBO(colon,  &kp COLON,      2 3, DEFAULT, 50, 100)
+        COMBO(caps,   &kp CAPS,       4 5, DEFAULT, 50, 100)
+        COMBO(semi,   &kp SEMI,       6 7, DEFAULT, 50, 100)
+        COMBO(del,    &kp DEL,        8 9, DEFAULT, 50, 100)
+        COMBO(excl,   &kp EXCL,     14 15, DEFAULT, 50, 100)
+        COMBO(bspc,   &kp BSPC,     18 19, DEFAULT, 50, 100)
     };
 
     keymap {
