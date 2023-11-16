@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -50,9 +50,9 @@
     combos {
         compatible = "zmk,combos";
         COMBO(tab,  &kp TAB,      0 1, DEFAULT, 50, 100)
-        COMBO(colon,  &kp COLON,      2 3, DEFAULT, 50, 100)
+        COMBO(colon,  &kp COLON,      3 4, DEFAULT, 50, 100)
         COMBO(caps,   &kp CAPS,       4 5, DEFAULT, 50, 100)
-        COMBO(semi,   &kp SEMI,       6 7, DEFAULT, 50, 100)
+        COMBO(semi,   &kp SEMI,       5 6, DEFAULT, 50, 100)
         COMBO(del,    &kp DEL,        8 9, DEFAULT, 50, 100)
         COMBO(excl,   &kp EXCL,     14 15, DEFAULT, 50, 100)
     };
