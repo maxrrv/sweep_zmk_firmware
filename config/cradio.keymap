@@ -31,20 +31,20 @@
 / {
     combos {
         compatible = "zmk,combos";
-        COMBO(tab,  &kp TAB,      0 1, DEFAULT, 50, 100)
-        COMBO(colon,  &kp COLON,      3 4, DEFAULT, 50, 100)
-        COMBO(caps,   &kp CAPS,       4 5, DEFAULT, 50, 100)
-        COMBO(semi,   &kp SEMI,       5 6, DEFAULT, 50, 100)
-        COMBO(del,    &kp DEL,        8 9, DEFAULT, 50, 100)
-        COMBO(excl,   &kp EXCL,     14 15, DEFAULT, 50, 100)
-        COMBO(lgui,   &kp LGUI,     10 20, DEFAULT, 50, 100)
-        COMBO(lalt,   &kp LALT,     11 21, DEFAULT, 50, 100)
-        COMBO(lctrl,   &kp LCTRL,     12 22, DEFAULT, 50, 100)
-        COMBO(lshift,   &kp LSHIFT,     13 23, DEFAULT, 50, 100)
-        COMBO(rshift,   &kp RSHIFT,     16 26, DEFAULT, 50, 100)
-        COMBO(rctrl,   &kp RCTRL,     17 27, DEFAULT, 50, 100)
-        COMBO(ralt,   &kp RALT,     18 28, DEFAULT, 50, 100)
-        COMBO(rgui,   &kp RGUI,     19 29, DEFAULT, 50, 100)
+        COMBO(tab,  &kp TAB,      0 1, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(colon,  &kp COLON,      3 4, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(caps,   &kp CAPS,       4 5, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(semi,   &kp SEMI,       5 6, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(del,    &kp DEL,        8 9, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(excl,   &kp EXCL,     14 15, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(lgui,   &kp LGUI,     10 20, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(lalt,   &kp LALT,     11 21, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(lctrl,   &kp LCTRL,     12 22, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(lshift,   &kp LSHIFT,     13 23, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(rshift,   &kp RSHIFT,     16 26, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(rctrl,   &kp RCTRL,     17 27, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(ralt,   &kp RALT,     18 28, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
+        COMBO(rgui,   &kp RGUI,     19 29, DEFAULT SYMBOLS NUMBERS FNS NAV_BT, 50, 100)
     };
 
     keymap {
@@ -73,7 +73,7 @@
             &kp LBRC    &kp AMPS   &kp STAR   &kp LPAR   &kp RBRC       &none    &none      &none      &none      &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ :        │  $       │  %       │  ^       │  +       │   │          │          │          │          │          │
-            &kp COLON    &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS      &none    &kp RSHIFT  &kp RCTRL  &kp RALT &kp RGUI
+            &kp COLON    &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS      &none    &none      &none      &none      &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ~        │  !       │  @       │  hash    │  |       │   │          │          │          │          │          │
             &kp TILDE   &kp EXCL  &kp AT     &kp HASH  &kp PIPE         &none    &none      &none      &none      &none 
@@ -91,7 +91,7 @@
             &kp LBKT    &kp N7     &kp N8     &kp N9      &kp RBKT          &none    &none      &none      &none      &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ESCAPE   │  4       │  5       │  6       │  =       │   │          │          │          │          │          │
-            &kp ESC    &kp N4     &kp N5     &kp N6      &kp EQUAL          &none &kp RSHIFT  &kp RCTRL  &kp RALT &kp RGUI
+            &kp ESC    &kp N4     &kp N5     &kp N6      &kp EQUAL          &none    &none      &none      &none      &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ `        │  1       │  2       │  3       │  \       │   │          │          │     ,    │     .    │    /     │
             &kp GRAVE  &kp N1     &kp N2     &kp N3      &kp BSLH         &none    &none      &kp COMMA  &kp DOT    &kp FSLH 
@@ -105,10 +105,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-               &none    &none      &none      &none      &none       &kp PG_UP   &kp F7     &kp F8     &kp F9    &kp F10    
+               &none    &none      &none      &none      &none         &kp PG_UP   &kp F7     &kp F8     &kp F9    &kp F10    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-       &kp LGUI       &kp LALT   &kp LCTRL  &kp LSHIFT   &none       &kp HOME    &kp F4     &kp F5      &kp F6    &kp F11   
+               &none    &none      &none      &none      &none         &kp HOME    &kp F4     &kp F5      &kp F6    &kp F11   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
                &none    &none      &none      &none      &none         &kp PG_DN   &kp F1     &kp F2      &kp F3    &kp F12   
